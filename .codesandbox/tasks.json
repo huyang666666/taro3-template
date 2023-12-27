@@ -1,0 +1,101 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "build:weapp": {
+      "name": "build:weapp",
+      "command": "yarn build:weapp"
+    },
+    "build:swan": {
+      "name": "build:swan",
+      "command": "yarn build:swan"
+    },
+    "build:alipay": {
+      "name": "build:alipay",
+      "command": "yarn build:alipay"
+    },
+    "build:tt": {
+      "name": "build:tt",
+      "command": "yarn build:tt"
+    },
+    "build:h5": {
+      "name": "build:h5",
+      "command": "yarn build:h5"
+    },
+    "build:rn": {
+      "name": "build:rn",
+      "command": "yarn build:rn"
+    },
+    "build:qq": {
+      "name": "build:qq",
+      "command": "yarn build:qq"
+    },
+    "build:jd": {
+      "name": "build:jd",
+      "command": "yarn build:jd"
+    },
+    "build:quickapp": {
+      "name": "build:quickapp",
+      "command": "yarn build:quickapp"
+    },
+    "dev:weapp": {
+      "name": "dev:weapp",
+      "command": "yarn dev:weapp"
+    },
+    "dev:swan": {
+      "name": "dev:swan",
+      "command": "yarn dev:swan"
+    },
+    "dev:alipay": {
+      "name": "dev:alipay",
+      "command": "yarn dev:alipay"
+    },
+    "dev:tt": {
+      "name": "dev:tt",
+      "command": "yarn dev:tt"
+    },
+    "dev:h5": {
+      "name": "dev:h5",
+      "command": "yarn dev:h5"
+    },
+    "dev:rn": {
+      "name": "dev:rn",
+      "command": "yarn dev:rn"
+    },
+    "dev:qq": {
+      "name": "dev:qq",
+      "command": "yarn dev:qq"
+    },
+    "dev:jd": {
+      "name": "dev:jd",
+      "command": "yarn dev:jd"
+    },
+    "dev:quickapp": {
+      "name": "dev:quickapp",
+      "command": "yarn dev:quickapp"
+    },
+    "test": {
+      "name": "test",
+      "command": "yarn test"
+    },
+    "yarn  dev:h5": {
+      "name": "yarn  dev:h5",
+      "command": "yarn  dev:h5",
+      "runAtStart": true,
+      "preview": {
+        "port": 10086
+      }
+    },
+    "CSB_RUN_OUTSIDE_CONTAINER=1 devcontainer templates apply --template-id \"ghcr.io/devcontainers/templates/typescript-node\" --template-args '{\"imageVariant\":\"18-buster\"}' --features '[]'": {
+      "name": "Environment setup",
+      "command": "CSB_RUN_OUTSIDE_CONTAINER=1 devcontainer templates apply --template-id \"ghcr.io/devcontainers/templates/typescript-node\" --template-args '{\"imageVariant\":\"18-buster\"}' --features '[]'"
+    }
+  }
+}

@@ -1,9 +1,15 @@
 import type { UserConfigExport } from "@tarojs/cli";
+
 export default {
-   logger: {
+  logger: {
     quiet: false,
-    stats: true
+    stats: true,
   },
   mini: {},
-  h5: {}
-} satisfies UserConfigExport
+  h5: {
+    devServer: {
+      // disableHostCheck: true,
+      allowedHosts: [".csb.app"], // <  Copy and paste the domain from the URL Codebox provides for your runtime here
+    },
+  },
+} satisfies UserConfigExport;
